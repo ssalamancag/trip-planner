@@ -20,8 +20,13 @@ class TripController {
     }
     def search(){
         
-        def results = Trip.findAllByDestino(params.search) 
-        [results:results]
+        if( params.destino == 'destino'){
+            def results = Trip.findAllByDestino(params.search) 
+            [results:results]
+        }else{
+            def results = Trip.findAllByPrecio(params.search.toInteger())
+        }
+        
     }
 
     def show(Long id) {

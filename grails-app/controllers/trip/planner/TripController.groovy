@@ -15,13 +15,18 @@ class TripController {
     }
 
     def bar(){
-        
         respond params
     }
-    def search(){
-        
-        def results = Trip.findAllByDestino(params.search) 
+    def barPrecio(){
+        respond params
+    }
+    def searchPrecio(){
+        def results = Trip.findAllByPrecio(params.search.toInteger())
         [results:results]
+    }
+    def search(){
+            def results = Trip.findAllByDestino(params.search) 
+            [results:results]
     }
 
     def show(Long id) {

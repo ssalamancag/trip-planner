@@ -14,6 +14,16 @@ class TripController {
         respond tripService.list(params), model:[tripCount: tripService.count()]
     }
 
+    def bar(){
+        
+        respond params
+    }
+    def search(){
+        
+        def results = Trip.findAllByDestino(params.search) 
+        [results:results]
+    }
+
     def show(Long id) {
         respond tripService.get(id)
     }

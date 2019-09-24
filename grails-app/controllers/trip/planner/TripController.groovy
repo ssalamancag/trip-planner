@@ -17,6 +17,10 @@ class TripController {
     def show(Long id) {
         respond tripService.get(id)
     }
+    def list(Integer max) {
+        params.max = Math.min(max ?: 10, 100)
+        [tripInstanceList: Trip.list(params), tripInstanceTotal: Trip.count()]
+    }
 
     def create() {
         respond new Trip(params)

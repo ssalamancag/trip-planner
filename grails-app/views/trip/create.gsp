@@ -29,12 +29,8 @@
                 </g:hasErrors>
                 <g:form resource="${this.trip}" method="POST">
                     <fieldset class="form">
-                            <label>Destino: </label>
-                            <g:textField name="firstName"/><br/>
-                            <label>Fecha inicio: </label>
-                            <g:textField name="lastName"/><br/>
-                            <label>Descripcion: </label>
-                            <g:textField name="lastName"/><br/>
+                           
+                            
                         <f:all bean="trip"/>
                     </fieldset>
                     <fieldset class="buttons">

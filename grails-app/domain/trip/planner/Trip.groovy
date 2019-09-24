@@ -1,11 +1,14 @@
 package trip.planner
 
 class Trip {
-
+    String destino
+    Date fechaInicio
+    String descripcion
+    int precio
     static constraints = {
-        String destino
-        String fechaInicio
-        String descripcion
+        destino (blank: false)
+        descripcion (blank: false)
+        fechaInicio (blank: false)
+        precio (blank: false)
     }
-    
 }

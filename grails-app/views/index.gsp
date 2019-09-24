@@ -15,6 +15,18 @@
             <span></span>
         </div>
     </div>
+    <div>
+        <div class="container_radio_buttons">
+        <form class="toggle">
+            <input type="radio" id="choice1" name="choice" value="creative">
+            <label for="choice1">Speed</label>
+            <input type="radio" id="choice2" name="choice" value="productive">
+            <label for="choice2">Quality</label>
+            <div id="flap"><span class="content">productive</span></div>
+        </form>
+
+    </div>
+    </div>
     <div style="text-align: center;">
         <button class="icon-btn add-btn" onclick="window.location.href='http://localhost:8080/trip/create'">
             <div class="add-icon"></div>

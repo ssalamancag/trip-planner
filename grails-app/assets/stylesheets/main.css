@@ -41,6 +41,18 @@ body {
     box-shadow: 0 0 0.3em #424649;
 }
 
+.card {
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 1vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
 #grailsLogo {
     background-color: #feb672;
 }

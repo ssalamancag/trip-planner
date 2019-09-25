@@ -1,4 +1,4 @@
-Instrucciones
+#Instrucciones
 
 * clonar el repositorio
 * Ingresar al directorio trip-planer
@@ -6,10 +6,10 @@ Instrucciones
 * Ingresar a http://localhost:8080
 * Disfrutar la experiencia
 
-Cool Feature: buscar por precio
+**Cool Feature:** buscar por precio
 
 
-Integrantes 
+##Integrantes 
 
 * Johan Sebastian Salamanca Gonzalez
 * Harold Nicolas Saavedra

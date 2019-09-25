@@ -12,26 +12,23 @@
     <div>
         <h1 class="subtitle">Search by:</h1>
         <div class="container_radio_buttons">
-            <form class="toggle">
-                <input type="radio" id="choice1" name="choice" value="creative">
-                <label for="choice1">Destino</label>
-                <input type="radio" id="choice2" name="choice" value="productive">
-                <label for="choice2">Dinero</label>
-                <div id="flap"><span class="content">test</span></div>
-            </form>
+            <button class="btn first" onclick="window.location.href='http://localhost:8080/trip/index_destino'">Destination</button>
+            <button class="btn first" onclick="window.location.href='http://localhost:8080/trip/index_dinero'">Money</button>
         </div>
     </div>
-    <div class="container">
-        <div class="search-box">
-            <input type="text" />
-            <span></span>
+    <div class="bottom_icons_container">
+        <div style="width: 130px;">
+            <button class="icon-btn add-btn" onclick="window.location.href='http://localhost:8080/trip/create'">
+                <div class="add-icon"></div>
+                <div class="btn-txt">New trip</div>
+            </button>
         </div>
-    </div>
-    <div style="text-align: center; margin-top: 25vh;">
-        <button class="icon-btn add-btn" onclick="window.location.href='http://localhost:8080/trip/create'">
-            <div class="add-icon"></div>
-            <div class="btn-txt">New trip</div>
-        </button>
+        <div style="width: 130px;">
+            <button class="icon-btn more-btn" onclick="window.location.href='http://localhost:8080/trip/index'">
+                <div class="more-icon"></div>
+                <div class="btn-txt">Trip list</div>
+            </button>
+        </div>
     </div>
 </div>
 <asset:javascript src="index.js"/>    

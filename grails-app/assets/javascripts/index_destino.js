@@ -6,7 +6,7 @@ st.toggle = document.querySelector('.toggle');
 st.choice1 = document.querySelector('#choice1');
 st.choice2 = document.querySelector('#choice2');
 
-st.choice2.checked = false;
+st.choice1.checked = true;
 
 st.flap.addEventListener('transitionend', () => {
 

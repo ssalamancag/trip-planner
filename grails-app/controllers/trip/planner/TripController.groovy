@@ -14,6 +14,23 @@ class TripController {
         respond tripService.list(params), model:[tripCount: tripService.count()]
     }
 
+    def index_dinero(){
+        respond params
+    }
+    def index_destino(){
+        respond params
+    }
+    def search_dinero(){
+        def results = Trip.findAllByPrecio(params.search.toInteger())
+        [results:results]
+    }
+    def search_destino(){
+            def results = Trip.findAllByDestino(params.search) 
+            [results:results]
+    }
+
+    
+
     def show(Long id) {
         respond tripService.get(id)
     }

@@ -100,12 +100,6 @@ body *, html * {
     transform: rotate(45deg) translate(56px, -4px);
 }
 
-.main-hr {
-    width: 30%;
-    border: none;
-    border-top: 1px solid white;
-}
-
 .icon-btn {
     width: 52px;
     height: 52px;
@@ -211,6 +205,7 @@ body *, html * {
     font-size: 1.1em;
     font-weight: bold;
     text-align: center;
+    margin-top: 3vh;
 }
 
 :root {
@@ -221,8 +216,14 @@ body *, html * {
 }
 
 .container_radio_buttons {
-    perspective: 500px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 4vh;
+    margin-top: 3vh;
 }
 
 .toggle {
@@ -288,5 +289,130 @@ body *, html * {
     color: #FF7974;
     transition: transform 0s linear .25s;
     transform-style: preserve-3d;
+}
+
+.more-btn:hover {
+    width: 120px;
+  }
+
+.more-btn::before,
+.more-btn::after {
+    transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    top: calc(50% - 2px);
+    background: white;
+}
+
+.more-btn::after {
+    right: 14px;
+    overflow: hidden;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.more-btn::before {
+    left: 14px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.icon-btn:focus {
+    outline: none;
+}
+
+.more-btn:hover .btn-txt {
+    opacity: 1;
+}
+
+.more-btn:hover::before,
+.more-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+
+.more-icon::after,
+.more-icon::before {
+    transition: all 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 2px;
+    top: calc(50% - 2px);
+    background: white;
+    overflow: hidden;
+}
+
+.more-icon::before {
+    left: 22px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.more-icon::after {
+    right: 22px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.more-btn:hover .add-icon::before {
+    left: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+}
+.more-btn:hover .add-icon::after {
+    right: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+}
+
+.bottom_icons_container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0.6em;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 7px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn:hover, .btn:focus {
+    color: #FE6B8B;
+    outline: 0;
+ }
+  
+.first {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover {
+    box-shadow: 0 0 40px 40px white inset;
 }
   

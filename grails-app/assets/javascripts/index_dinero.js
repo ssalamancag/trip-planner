@@ -6,7 +6,7 @@ st.toggle = document.querySelector('.toggle');
 st.choice1 = document.querySelector('#choice1');
 st.choice2 = document.querySelector('#choice2');
 
-st.choice2.checked = false;
+st.choice2.checked = true;
 
 st.flap.addEventListener('transitionend', () => {
 
@@ -30,7 +30,7 @@ st.clickHandler = (e) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    st.flap.children[0].textContent = st.choice1.nextElementSibling.textContent;
+    st.flap.children[0].textContent = st.choice2.nextElementSibling.textContent;
 });
 
 document.addEventListener('click', (e) => st.clickHandler(e));
